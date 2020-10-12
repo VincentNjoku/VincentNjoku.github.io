@@ -34,19 +34,19 @@
 */
 
 // Define base and accent colors
-$base-color: #111111;
+$base-color: #222629;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #ffffff;
-$background-alt: #806543a9;
+$background: #fff;
+$background-alt: #222629;
 
 // Define border colors
-$border: #dcd9d9;
+$border: #61892f;
 
 // Define text colors
-$heading: #374054;
-$text: #74808a;
+$heading: #6b6e70;
+$text: #fff;
 
 /*
     ---------------------
@@ -174,7 +174,7 @@ header {
         &:hover {
             color: $base-color-hover;
             text-decoration: none;
-            background: #eee;
+            background: #86c232;
             border-radius: 4px;
         }
 
@@ -302,7 +302,7 @@ footer {
 
     &:hover {
         color: $base-color;
-        background: #fff;
+        background: #86c232;
         text-decoration: none;
     }
 }
@@ -378,7 +378,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: #61892f;
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -405,7 +405,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff;
+    color: #61892f;
 
     span {
         cursor: pointer;
@@ -448,8 +448,13 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    background-image: url(../images/constellations.jpg);
+    background-size: contain;
+
 
     h2 {
+        display: inline-flexbox;
+        background: #fff;
         color: $heading;
     }
 
@@ -457,6 +462,18 @@ footer {
         color: $text;
         margin: 0;
     }
+}
+
+#about-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #86c232;
+    z-index: 1;
 }
 
 /*
@@ -567,7 +584,7 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #374054;
+    color: #6b6e70;
 }
 
 /*
@@ -715,7 +732,7 @@ footer {
         margin: 7px;
         padding: 5px 10px;
         color: $heading;
-        background: darken($background-alt, 5%);
+        background: #86c232;
         list-style: none;
         cursor: default;
         font-size: 1.2em;
